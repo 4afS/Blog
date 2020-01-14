@@ -1,5 +1,5 @@
 baseurl = "https://4afs.github.io/blog/"
-title = "johndoe"
+title = "4afS blog"
 theme = "coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -12,19 +12,17 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
-
 [params]
-    author = "John Doe"
-    info = "Full Stack DevOps and Magician"
-    description = "John Doe's personal website"
+    author = "Hibiki"
+    info = "Likes Haskell and Go."
+    description = "4afS's personal website"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "img/icon.jpg"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    favicon_32 = "img/icon.jpg"
+    favicon_16 = "img/icon.jpg"
 
-    footercontent = "Enter a text here."
+    footercontent = "4afS's personal website."
 
     hidecredits = false
     hidecopyright = false
@@ -39,24 +37,19 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fab fa-github fa-2x"
     weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab fa-2x"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://github.com/4afS/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+    weight = 2
+    url = "https://twitter.com/4afS_/"
 
 # Menu links
 [[menu.main]]
     name = "Blog"
     weight = 1
-    url  = "/posts/"
+    url  = "posts/"
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "about/"
