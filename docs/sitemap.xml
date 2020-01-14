@@ -3,15 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://4afs.github.io/blog/categories/</loc>
+    <loc>https://4afs.github.io/blog/</loc>
+    <lastmod>2020-01-15T02:07:44+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://4afs.github.io/blog/</loc>
+    <loc>https://4afs.github.io/blog/posts/</loc>
+    <lastmod>2020-01-15T02:07:44+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://4afs.github.io/blog/tags/</loc>
+    <lastmod>2020-01-15T02:07:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/tags/test/</loc>
+    <lastmod>2020-01-15T02:07:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/posts/test/</loc>
+    <lastmod>2020-01-15T02:07:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/categories/</loc>
   </url>
   
 </urlset>
