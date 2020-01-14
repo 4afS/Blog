@@ -16,11 +16,8 @@ pygmentscodefencesguesssyntax = true
     author = "Hibiki"
     info = "Likes Haskell and Go."
     description = "4afS's personal website"
-    keywords = "blog,developer,personal"
+    keywords = "blog,developer,personal,programming"
     avatarurl = "img/icon.jpg"
-
-    favicon_32 = "img/icon.jpg"
-    favicon_16 = "img/icon.jpg"
 
     footercontent = "4afS's personal website."
 
