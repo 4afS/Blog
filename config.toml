@@ -19,6 +19,9 @@ pygmentscodefencesguesssyntax = true
     keywords = "blog,developer,personal,programming"
     avatarurl = "img/icon.jpg"
 
+    favicon_32 = "img/favicon-32x32.png"
+    favicon_16 = "img/favicon-16x16.png"
+
     footercontent = "4afS's personal website."
 
     hidecredits = false
