@@ -11,7 +11,7 @@ watch:
 publish:
 	@make build
 	$(GITCMD) add .
-	$(GITCMD) commit -m "published at `date "+%Y/%m/%d %H:%M"`"
+	@$(GITCMD) commit -m "published at `date "+%Y/%m/%d %H:%M"`"
 	$(GITCMD) push -u origin master
 
 %.md:
@@ -19,7 +19,3 @@ publish:
 
 update:
 	@$(GITCMD) pull --recurse-submodules
-
-.PHONY: clean
-clean:
-	$(RMCMD) -rf ./docs
