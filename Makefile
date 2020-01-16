@@ -6,7 +6,7 @@ build:
 	@$(HUGOCMD) -v
 
 watch:
-	@$(HUGOCMD) -vD --watch
+	@$(HUGOCMD) server -D --watch
 
 publish:
 	@make build
