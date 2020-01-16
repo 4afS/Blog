@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 4afS blog</title>
-    <link>https://4afs.github.io/blog/posts/</link>
-    <description>Recent content in Posts on 4afS blog</description>
+    <title>golang on 4afS blog</title>
+    <link>https://4afs.github.io/blog/tags/golang/</link>
+    <description>Recent content in golang on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 16 Jan 2020 19:42:14 +0900</lastBuildDate>
     
-	<atom:link href="https://4afs.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://4afs.github.io/blog/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -30,15 +30,6 @@
 ライブロックは今回初めて聞いた問題だった．これはデッドロックを回避するための処理が同じタイミングで動作してしまい，ずっと譲り合いをしている状況だ．本の例えでは「廊下で誰かとすれ違う際，相手が避けた方向に自分も避けてしまい，またそれを繰り返すことで進まなくなってしまう状態を想像すればライブロックを理解できる．」と書いていて，私はこの例で理解することができた．
 最後にリソースの枯渇．これは複数プロセスがある際に，一つのプロセスがリソースを食い尽くしてしまっているがために他のプロセスが十分にリソースを確保できなくなってしまうことだ．理論的にはわかるのだが，実際にサンプルコードを実行してみるとよくわからなかった．本には「LockやUnlockが遅いから，というのは違う」と書いてるのだが，実際にpolite workerとgreedy workerを別々で実行するとpolite workerの方が明らかに処理回数が少なかったので，この件に関してはまた読み進めたらわかるだろうということで今回はスルーしておく．
 最後に 私自身並行処理はほぼ未経験なのでここまで初歩から説明がされていてとても助けられた．この章の最後に「並行処理で起こる問題へGoからの正しいアプローチ」と書かれており，続きがとても気になった．また次章も記事にできたらと思う．</description>
-    </item>
-    
-    <item>
-      <title>テスト</title>
-      <link>https://4afs.github.io/blog/posts/test/</link>
-      <pubDate>Wed, 15 Jan 2020 02:07:44 +0900</pubDate>
-      
-      <guid>https://4afs.github.io/blog/posts/test/</guid>
-      <description>テスト投稿です！</description>
     </item>
     
   </channel>
