@@ -6,7 +6,7 @@ build:
 	@$(HUGOCMD) -v
 
 watch:
-	@$(HUGOCMD) server -D --watch
+	@$(HUGOCMD) server -D --watch --disableFastRender
 
 publish:
 	@make build
