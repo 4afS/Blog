@@ -7,6 +7,7 @@ tags = ["test"]
 categories = []
 externalLink = ""
 series = []
+draft = true
 +++
 
 テスト投稿です！
