@@ -6,7 +6,16 @@
     <description>Recent content in Tags on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2020 09:38:44 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 00:41:40 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>angular</title>
+      <link>https://4afs.github.io/blog/tags/angular/</link>
+      <pubDate>Wed, 09 Dec 2020 00:41:40 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/tags/angular/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>database</title>
       <link>https://4afs.github.io/blog/tags/database/</link>

@@ -6,7 +6,35 @@
     <description>Recent content on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2020 09:38:44 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 00:41:40 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>体重計を作る　～フロントエンド編～</title>
+      <link>https://4afs.github.io/blog/posts/plumit-front/</link>
+      <pubDate>Wed, 09 Dec 2020 00:41:40 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/posts/plumit-front/</guid>
+      <description>この記事は https://4afs.hatenablog.com/entry/2019/12/22/213703 から移行したものです．
+  この記事は大阪工業大学 Advent Calendar 2019の23日目の記事です．
+こんにちは，Hibiki(@4afS_)です．
+今回は初めてのWebページ作成に挑戦しました．期間が２週間弱ほどしか取れなかったので完成できるか不安でしたが，無事間に合ってよかったです．完成したものは実際にここから，ソースコードはここから見ることができます．
+はじめに このプロジェクトはモノ編・バックエンド編・フロントエンド編の３部構成です． 作成に至る経緯などは上の記事をを参照していただけると幸いです．
+自己紹介 関西の情報系大学２回生で，普段はHaskell書いたりウォーキング・デッドを見たりしてます． Web周りの経験としては，少しHTMLとCSS，Elmに触れたことがある程度でJavaScriptや他のフレームワークの経験は0です．
+開発環境 Angular CLI : 8.3.20
+npm : 6.13.2
+chart.js : 2.9.3
+開発過程 表示したいものを考える 今回は友人の体重を表示するためのものなので，それがひと目でわかるグラフを表示することにします．
+デザインを考える はじめからコードを書くのは流石にしんどいと思うので，まずAdobe XDを使ってプロトタイプを作ります．その際にアイコンが欲しくなったので体重計のようなものを簡単にillustratorで作りました． 実際のアイコンとXDで作成したプロトタイプが↓です．
+構成を考える Angularはcomponent単位で考えるので，プロトタイプから分割して，Header，大きく文字が書かれたTitle，グラフがあるWeightChart，最後にFooterの構成で作成することにします．また，Httpリクエスト部分はサービスへ分離することにしました．
+実際にコーディング コーディング環境は，NeoVim + coc.nvimにTypeScript，Angular，HTMLのLanguageServerを導入して書いていきます．coc.nvimは今すごく気に入ってるプラグインなので，またそれについての記事も書こうと思います．
+今回のWebページはPC，スマホどちらからも崩れずに見れるように，知識がないので無理矢理ですがレスポンシブにしていきます．
+Header・Footer まずはHeaderとFooterです．ここでは，Angular Materialから提供されているmat-toolbarを使います．使うのはとても簡単で，
+&amp;lt;mat-toolbar&amp;gt; &amp;lt;mat-toolbar-row&amp;gt; 要素を列挙する &amp;lt;/mat-toolbar-row&amp;gt; &amp;lt;/mat-toolbar&amp;gt; とするだけでツールバーが作成されます．これを上下においてHeader，Footerとすることにします．
+タイトル ここでは文字が大きく表示されるのでフォントにこだわりました．正直どう選べばいいかよくわからなかったので雰囲気で．
+グラフ 今回は体重がどのように変化しているかを見ることが目的なので，折れ線グラフを採用します．グラフの描画にはChart.jsを使い，X軸に日付，Y軸に体重を割り当て，量ってない日もわかるように値があるところには丸いポイントをつけます．
+完成！ 初めてのWebページ作成で，しかもあまり勉強時間が取れないなかで無事完成までたどり着けてよかったです．間違っているところもたくさんあると思うので，これからWeb系の勉強をしていこうと思います．
+おまけ 右上にひっそりいる数字ですが，一応アクセスカウンターです．もともと「あなたは○○人目の訪問者です」をやりたかったんですけど，しっくりこなかったので小さめに表示しました．</description>
+    </item>
+    
     <item>
       <title>いろいろなデータベースの種類について</title>
       <link>https://4afs.github.io/blog/posts/type-of-databases/</link>
