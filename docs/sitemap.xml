@@ -4,31 +4,21 @@
   
   <url>
     <loc>https://4afs.github.io/blog/</loc>
-    <lastmod>2020-12-09T00:41:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4afs.github.io/blog/tags/angular/</loc>
-    <lastmod>2020-12-09T00:41:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4afs.github.io/blog/posts/</loc>
-    <lastmod>2020-12-09T00:41:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4afs.github.io/blog/tags/</loc>
-    <lastmod>2020-12-09T00:41:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://4afs.github.io/blog/posts/plumit-front/</loc>
-    <lastmod>2020-12-09T00:41:40+09:00</lastmod>
+    <lastmod>2020-09-30T09:38:44+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://4afs.github.io/blog/tags/database/</loc>
+    <lastmod>2020-09-30T09:38:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/posts/</loc>
+    <lastmod>2020-09-30T09:38:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/tags/</loc>
     <lastmod>2020-09-30T09:38:44+09:00</lastmod>
   </url>
   
@@ -55,6 +45,31 @@
   <url>
     <loc>https://4afs.github.io/blog/posts/concurrency-in-go-1/</loc>
     <lastmod>2020-01-16T19:42:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/tags/angular/</loc>
+    <lastmod>2019-12-22T21:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/posts/plumit-front/</loc>
+    <lastmod>2019-12-22T21:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/tags/logic/</loc>
+    <lastmod>2018-12-21T22:36:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/tags/math/</loc>
+    <lastmod>2018-12-21T22:36:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://4afs.github.io/blog/posts/introduction-to-logic/</loc>
+    <lastmod>2018-12-21T22:36:21+09:00</lastmod>
   </url>
   
   <url>

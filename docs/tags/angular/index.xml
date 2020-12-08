@@ -6,14 +6,14 @@
     <description>Recent content in angular on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Dec 2020 00:41:40 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Dec 2019 21:37:03 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/angular/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>体重計を作る　～フロントエンド編～</title>
       <link>https://4afs.github.io/blog/posts/plumit-front/</link>
-      <pubDate>Wed, 09 Dec 2020 00:41:40 +0900</pubDate>
+      <pubDate>Sun, 22 Dec 2019 21:37:03 +0900</pubDate>
       
       <guid>https://4afs.github.io/blog/posts/plumit-front/</guid>
-      <description>この記事は https://4afs.hatenablog.com/entry/2019/12/22/213703 から移行したものです．
+      <description>この記事は 2020/12/09に https://4afs.hatenablog.com/entry/2019/12/22/213703 から移行したものです．
   この記事は大阪工業大学 Advent Calendar 2019の23日目の記事です．
 こんにちは，Hibiki(@4afS_)です．
 今回は初めてのWebページ作成に挑戦しました．期間が２週間弱ほどしか取れなかったので完成できるか不安でしたが，無事間に合ってよかったです．完成したものは実際にここから，ソースコードはここから見ることができます．

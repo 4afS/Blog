@@ -1,6 +1,6 @@
 +++ 
 draft = false 
-date = 2020-12-09T00:41:40+09:00
+date = 2019-12-22T21:37:03+09:00
 title = "体重計を作る　～フロントエンド編～"
 description = ""
 slug = "" 
@@ -9,7 +9,7 @@ categories = []
 externalLink = ""
 series = []
 +++
-> この記事は https://4afs.hatenablog.com/entry/2019/12/22/213703 から移行したものです．
+> この記事は 2020/12/09に https://4afs.hatenablog.com/entry/2019/12/22/213703 から移行したものです．
 
 ***
 

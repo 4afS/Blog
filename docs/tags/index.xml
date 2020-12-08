@@ -6,16 +6,7 @@
     <description>Recent content in Tags on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Dec 2020 00:41:40 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>angular</title>
-      <link>https://4afs.github.io/blog/tags/angular/</link>
-      <pubDate>Wed, 09 Dec 2020 00:41:40 +0900</pubDate>
-      
-      <guid>https://4afs.github.io/blog/tags/angular/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 30 Sep 2020 09:38:44 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>database</title>
       <link>https://4afs.github.io/blog/tags/database/</link>
@@ -49,6 +40,33 @@
       <pubDate>Thu, 16 Jan 2020 19:42:14 +0900</pubDate>
       
       <guid>https://4afs.github.io/blog/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>angular</title>
+      <link>https://4afs.github.io/blog/tags/angular/</link>
+      <pubDate>Sun, 22 Dec 2019 21:37:03 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/tags/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logic</title>
+      <link>https://4afs.github.io/blog/tags/logic/</link>
+      <pubDate>Fri, 21 Dec 2018 22:36:21 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/tags/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://4afs.github.io/blog/tags/math/</link>
+      <pubDate>Fri, 21 Dec 2018 22:36:21 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/tags/math/</guid>
       <description></description>
     </item>
     
