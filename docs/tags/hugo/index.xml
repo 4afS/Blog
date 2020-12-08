@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 4afS blog</title>
+    <link>https://4afs.github.io/blog/tags/hugo/</link>
+    <description>Recent content in hugo on 4afS blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Jan 2020 00:23:24 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoを使ってGitHub Pagesにブログを構築した</title>
+      <link>https://4afs.github.io/blog/posts/build-a-blog-on-github-pages/</link>
+      <pubDate>Fri, 24 Jan 2020 00:23:24 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/posts/build-a-blog-on-github-pages/</guid>
+      <description>はじめに 今回は，GitHub PagesにHugoを使ってブログを構築し，makeで楽に更新できるようにしたので，そのことについて書こうと思います．
+環境 </description>
+    </item>
+    
+  </channel>
+</rss>

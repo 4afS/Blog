@@ -6,10 +6,24 @@
     <description>Recent content in Posts on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jan 2020 19:42:14 +0900</lastBuildDate>
-    
-	<atom:link href="https://4afs.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 30 Sep 2020 09:38:44 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>いろいろなデータベースの種類について</title>
+      <link>https://4afs.github.io/blog/posts/type-of-databases/</link>
+      <pubDate>Wed, 30 Sep 2020 09:38:44 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/posts/type-of-databases/</guid>
+      <description>初めに 先日API開発をしている際に，雑にMySQLを選定してしまいました．本当にこれでいいのか？と疑問に思い調べたので，その内容をまとめておこうと思います．また，それぞれのタイプについての説明のみで，実際にそのタイプが用いられているデータベースの説明をするものではありません．
+主なデータベースの種類 データベースの種類はたくさんありますが，ここではその一部を紹介します．
+ RDB (Relational Data Base) NoSQL  KVS (キーバリュー型) 列指向型 ドキュメント指向型 グラフ指向型    RDB 概要 現在主流とされているデータベース．複数のテーブルで構成され，個々のテーブルが他のテーブルと関係を持つ．テーブルとは，行と列を持つもので，Excelの表のようなイメージ．
+強み  ACID特性を満たすトランザクションにより，データの一貫性が保証される． 正規化によるテーブルの連鎖を用いたデータベースの構築により，追加・削除・更新等の処理コストが低い． SQLの文法を使用できるため，複雑な条件での検索や集計が可能． 一度に大量の処理を実行することができる． 運用実績が豊富なので情報が多い．  弱み  事前にデータの定義をしておく必要があるため，拡張にコストがかかる． データの一貫性を保証することを重視しているため，分散環境には不向き． SQLのオーバーヘッドが大きいため，シンプルな処理での速度はNoSQLと比較すると遅い．  代表的なサービス MySQL : https://www.mysql.com/jp/
+PostgreSQL : https://www.postgresql.jp/
+SQLite : https://www.sqlite.org/index.html
+NoSQL NoSQLはRDBのサブセットで，機能の豊富なRDBから何を省略したかでNoSQLを分類することができると思います．
+KVS（キーバリュー型） 概要 名前の通り，キーと値からなるシンプルなデータベース．
+特徴  データ構造がシンプルで分割可能なのでスケールアウトが容易． データへのアクセスが高速  列指向型 概要 一般的なRDBは行指向データベースです．行指向データベースでは行1つ1つをひとかたまりのデータとして扱います．そのため，データの追加は行ごとに，検索結果は複数の行として，削除や更新も特定の行を指定して行います．それに対して列指向データベースは，列1つ1つをひとかたまりのデータとして扱います．そのため追加や検索，削除等もすべて列単位で行われます．
+特徴  データ列の高速な取得向けに最適化されているため，ビックデータ等の扱いが得意． 必要のないデータ列へのアクセスを行わないので，ディクスI/Oがかなり小さい． 特定の列のみへの処理が主なためスケールアウトが容易．  代表的なサービス Amazon Redshift : https://aws.amazon.com/jp/redshift/</description>
+    </item>
     
     <item>
       <title>「Go言語による並行処理」の1章を読んで</title>
@@ -30,15 +44,6 @@
 ライブロックは今回初めて聞いた問題だった．これはデッドロックを回避するための処理が同じタイミングで動作してしまい，ずっと譲り合いをしている状況だ．本の例えでは「廊下で誰かとすれ違う際，相手が避けた方向に自分も避けてしまい，またそれを繰り返すことで進まなくなってしまう状態を想像すればライブロックを理解できる．」と書いていて，私はこの例で理解することができた．
 最後にリソースの枯渇．これは複数プロセスがある際に，一つのプロセスがリソースを食い尽くしてしまっているがために他のプロセスが十分にリソースを確保できなくなってしまうことだ．理論的にはわかるのだが，実際にサンプルコードを実行してみるとよくわからなかった．本には「LockやUnlockが遅いから，というのは違う」と書いてるのだが，実際にpolite workerとgreedy workerを別々で実行するとpolite workerの方が明らかに処理回数が少なかったので，この件に関してはまた読み進めたらわかるだろうということで今回はスルーしておく．
 最後に 私自身並行処理はほぼ未経験なのでここまで初歩から説明がされていてとても助けられた．この章の最後に「並行処理で起こる問題へGoからの正しいアプローチ」と書かれており，続きがとても気になった．また次章も記事にできたらと思う．</description>
-    </item>
-    
-    <item>
-      <title>テスト</title>
-      <link>https://4afs.github.io/blog/posts/test/</link>
-      <pubDate>Wed, 15 Jan 2020 02:07:44 +0900</pubDate>
-      
-      <guid>https://4afs.github.io/blog/posts/test/</guid>
-      <description>テスト投稿です！</description>
     </item>
     
   </channel>

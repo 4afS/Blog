@@ -6,10 +6,15 @@
     <description>Recent content in Tags on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jan 2020 19:42:14 +0900</lastBuildDate>
-    
-	<atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 30 Sep 2020 09:38:44 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>database</title>
+      <link>https://4afs.github.io/blog/tags/database/</link>
+      <pubDate>Wed, 30 Sep 2020 09:38:44 +0900</pubDate>
+      
+      <guid>https://4afs.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>concurrency</title>
@@ -35,15 +40,6 @@
       <pubDate>Thu, 16 Jan 2020 19:42:14 +0900</pubDate>
       
       <guid>https://4afs.github.io/blog/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://4afs.github.io/blog/tags/test/</link>
-      <pubDate>Wed, 15 Jan 2020 02:07:44 +0900</pubDate>
-      
-      <guid>https://4afs.github.io/blog/tags/test/</guid>
       <description></description>
     </item>
     

@@ -14,7 +14,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Hibiki"
-    info = "Likes Haskell and Go."
+    info = "Likes Haskell, Go and Rust."
     description = "4afS's personal website"
     keywords = "blog,developer,personal,programming"
     avatarurl = "img/icon.jpg"

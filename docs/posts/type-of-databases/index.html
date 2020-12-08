@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Hibiki">
+    <meta name="description" content="4afS&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal,programming">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="いろいろなデータベースの種類について"/>
+<meta name="twitter:description" content="初めに 先日API開発をしている際に，雑にMySQLを選定してしまいました．本当にこれでいいのか？と疑問に思い調べたので，その内容をまとめておこうと思います．また，それぞれのタイプについての説明のみで，実際にそのタイプが用いられているデータベースの説明をするものではありません．
+主なデータベースの種類 データベースの種類はたくさんありますが，ここではその一部を紹介します．
+ RDB (Relational Data Base) NoSQL  KVS (キーバリュー型) 列指向型 ドキュメント指向型 グラフ指向型    RDB 概要 現在主流とされているデータベース．複数のテーブルで構成され，個々のテーブルが他のテーブルと関係を持つ．テーブルとは，行と列を持つもので，Excelの表のようなイメージ．
+強み  ACID特性を満たすトランザクションにより，データの一貫性が保証される． 正規化によるテーブルの連鎖を用いたデータベースの構築により，追加・削除・更新等の処理コストが低い． SQLの文法を使用できるため，複雑な条件での検索や集計が可能． 一度に大量の処理を実行することができる． 運用実績が豊富なので情報が多い．  弱み  事前にデータの定義をしておく必要があるため，拡張にコストがかかる． データの一貫性を保証することを重視しているため，分散環境には不向き． SQLのオーバーヘッドが大きいため，シンプルな処理での速度はNoSQLと比較すると遅い．  代表的なサービス MySQL : https://www.mysql.com/jp/
+PostgreSQL : https://www.postgresql.jp/
+SQLite : https://www.sqlite.org/index.html
+NoSQL NoSQLはRDBのサブセットで，機能の豊富なRDBから何を省略したかでNoSQLを分類することができると思います．
+KVS（キーバリュー型） 概要 名前の通り，キーと値からなるシンプルなデータベース．
+特徴  データ構造がシンプルで分割可能なのでスケールアウトが容易． データへのアクセスが高速  列指向型 概要 一般的なRDBは行指向データベースです．行指向データベースでは行1つ1つをひとかたまりのデータとして扱います．そのため，データの追加は行ごとに，検索結果は複数の行として，削除や更新も特定の行を指定して行います．それに対して列指向データベースは，列1つ1つをひとかたまりのデータとして扱います．そのため追加や検索，削除等もすべて列単位で行われます．
+特徴  データ列の高速な取得向けに最適化されているため，ビックデータ等の扱いが得意． 必要のないデータ列へのアクセスを行わないので，ディクスI/Oがかなり小さい． 特定の列のみへの処理が主なためスケールアウトが容易．  代表的なサービス Amazon Redshift : https://aws.amazon.com/jp/redshift/"/>
+
+    <meta property="og:title" content="いろいろなデータベースの種類について" />
+<meta property="og:description" content="初めに 先日API開発をしている際に，雑にMySQLを選定してしまいました．本当にこれでいいのか？と疑問に思い調べたので，その内容をまとめておこうと思います．また，それぞれのタイプについての説明のみで，実際にそのタイプが用いられているデータベースの説明をするものではありません．
+主なデータベースの種類 データベースの種類はたくさんありますが，ここではその一部を紹介します．
+ RDB (Relational Data Base) NoSQL  KVS (キーバリュー型) 列指向型 ドキュメント指向型 グラフ指向型    RDB 概要 現在主流とされているデータベース．複数のテーブルで構成され，個々のテーブルが他のテーブルと関係を持つ．テーブルとは，行と列を持つもので，Excelの表のようなイメージ．
+強み  ACID特性を満たすトランザクションにより，データの一貫性が保証される． 正規化によるテーブルの連鎖を用いたデータベースの構築により，追加・削除・更新等の処理コストが低い． SQLの文法を使用できるため，複雑な条件での検索や集計が可能． 一度に大量の処理を実行することができる． 運用実績が豊富なので情報が多い．  弱み  事前にデータの定義をしておく必要があるため，拡張にコストがかかる． データの一貫性を保証することを重視しているため，分散環境には不向き． SQLのオーバーヘッドが大きいため，シンプルな処理での速度はNoSQLと比較すると遅い．  代表的なサービス MySQL : https://www.mysql.com/jp/
+PostgreSQL : https://www.postgresql.jp/
+SQLite : https://www.sqlite.org/index.html
+NoSQL NoSQLはRDBのサブセットで，機能の豊富なRDBから何を省略したかでNoSQLを分類することができると思います．
+KVS（キーバリュー型） 概要 名前の通り，キーと値からなるシンプルなデータベース．
+特徴  データ構造がシンプルで分割可能なのでスケールアウトが容易． データへのアクセスが高速  列指向型 概要 一般的なRDBは行指向データベースです．行指向データベースでは行1つ1つをひとかたまりのデータとして扱います．そのため，データの追加は行ごとに，検索結果は複数の行として，削除や更新も特定の行を指定して行います．それに対して列指向データベースは，列1つ1つをひとかたまりのデータとして扱います．そのため追加や検索，削除等もすべて列単位で行われます．
+特徴  データ列の高速な取得向けに最適化されているため，ビックデータ等の扱いが得意． 必要のないデータ列へのアクセスを行わないので，ディクスI/Oがかなり小さい． 特定の列のみへの処理が主なためスケールアウトが容易．  代表的なサービス Amazon Redshift : https://aws.amazon.com/jp/redshift/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://4afs.github.io/blog/posts/type-of-databases/" />
+<meta property="article:published_time" content="2020-09-30T09:38:44+09:00" />
+<meta property="article:modified_time" content="2020-09-30T09:38:44+09:00" />
+
+
+    
+      <base href="https://4afs.github.io/blog/posts/type-of-databases/">
+    
+    <title>
+  いろいろなデータベースの種類について · 4afS blog
+</title>
+
+    
+      <link rel="canonical" href="https://4afs.github.io/blog/posts/type-of-databases/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://4afs.github.io/blog/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://4afs.github.io/blog/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://4afs.github.io/blog/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://4afs.github.io/blog/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://4afs.github.io/blog/">
+      4afS blog
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://4afs.github.io/blog/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://4afs.github.io/blog/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">いろいろなデータベースの種類について</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-09-30T09:38:44&#43;09:00'>
+                September 30, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://4afs.github.io/blog/tags/database/">database</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <h1 id="初めに">初めに</h1>
+<p>先日API開発をしている際に，雑にMySQLを選定してしまいました．本当にこれでいいのか？と疑問に思い調べたので，その内容をまとめておこうと思います．また，それぞれのタイプについての説明のみで，実際にそのタイプが用いられているデータベースの説明をするものではありません．</p>
+<h1 id="主なデータベースの種類">主なデータベースの種類</h1>
+<p>データベースの種類はたくさんありますが，ここではその一部を紹介します．</p>
+<ul>
+<li>RDB (Relational Data Base)</li>
+<li>NoSQL
+<ul>
+<li>KVS (キーバリュー型)</li>
+<li>列指向型</li>
+<li>ドキュメント指向型</li>
+<li>グラフ指向型</li>
+</ul>
+</li>
+</ul>
+<h1 id="rdb">RDB</h1>
+<h2 id="概要">概要</h2>
+<p>現在主流とされているデータベース．複数のテーブルで構成され，個々のテーブルが他のテーブルと関係を持つ．テーブルとは，行と列を持つもので，Excelの表のようなイメージ．</p>
+<h2 id="強み">強み</h2>
+<ul>
+<li><a href="https://ja.wikipedia.org/wiki/ACID_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E7%A7%91%E5%AD%A6)">ACID</a>特性を満たすトランザクションにより，データの一貫性が保証される．</li>
+<li><a href="https://ja.wikipedia.org/wiki/%E9%96%A2%E4%BF%82%E3%81%AE%E6%AD%A3%E8%A6%8F%E5%8C%96">正規化</a>によるテーブルの連鎖を用いたデータベースの構築により，追加・削除・更新等の処理コストが低い．</li>
+<li><a href="https://ja.wikipedia.org/wiki/SQL#SQL%E6%96%87%E6%B3%95">SQLの文法</a>を使用できるため，複雑な条件での検索や集計が可能．</li>
+<li>一度に大量の処理を実行することができる．</li>
+<li>運用実績が豊富なので情報が多い．</li>
+</ul>
+<h2 id="弱み">弱み</h2>
+<ul>
+<li>事前にデータの定義をしておく必要があるため，拡張にコストがかかる．</li>
+<li>データの一貫性を保証することを重視しているため，分散環境には不向き．</li>
+<li>SQLのオーバーヘッドが大きいため，シンプルな処理での速度はNoSQLと比較すると遅い．</li>
+</ul>
+<h2 id="代表的なサービス">代表的なサービス</h2>
+<p>MySQL : <a href="https://www.mysql.com/jp/">https://www.mysql.com/jp/</a></p>
+<p>PostgreSQL : <a href="https://www.postgresql.jp/">https://www.postgresql.jp/</a></p>
+<p>SQLite : <a href="https://www.sqlite.org/index.html">https://www.sqlite.org/index.html</a></p>
+<h1 id="nosql">NoSQL</h1>
+<p>NoSQLはRDBのサブセットで，機能の豊富なRDBから何を省略したかでNoSQLを分類することができると思います．</p>
+<h1 id="kvsキーバリュー型">KVS（キーバリュー型）</h1>
+<h2 id="概要-1">概要</h2>
+<p>名前の通り，キーと値からなるシンプルなデータベース．</p>
+<h2 id="特徴">特徴</h2>
+<ul>
+<li>データ構造がシンプルで分割可能なのでスケールアウトが容易．</li>
+<li>データへのアクセスが高速</li>
+</ul>
+<h1 id="列指向型">列指向型</h1>
+<h2 id="概要-2">概要</h2>
+<p>一般的なRDBは行指向データベースです．行指向データベースでは行1つ1つをひとかたまりのデータとして扱います．そのため，データの追加は行ごとに，検索結果は複数の行として，削除や更新も特定の行を指定して行います．それに対して列指向データベースは，列1つ1つをひとかたまりのデータとして扱います．そのため追加や検索，削除等もすべて列単位で行われます．</p>
+<h2 id="特徴-1">特徴</h2>
+<ul>
+<li>データ列の高速な取得向けに最適化されているため，ビックデータ等の扱いが得意．</li>
+<li>必要のないデータ列へのアクセスを行わないので，ディクスI/Oがかなり小さい．</li>
+<li>特定の列のみへの処理が主なためスケールアウトが容易．</li>
+</ul>
+<h2 id="代表的なサービス-1">代表的なサービス</h2>
+<p>Amazon Redshift : <a href="https://aws.amazon.com/jp/redshift/">https://aws.amazon.com/jp/redshift/</a></p>
+<p>Cassandra : <a href="https://cassandra.apache.org/">https://cassandra.apache.org/</a></p>
+<h1 id="ドキュメント指向型">ドキュメント指向型</h1>
+<h2 id="概要-3">概要</h2>
+<p>ドキュメント形式のデータをそのまま格納できるデータベースです．ここでのドキュメント形式とはJSONやXMLのようなものを指します．</p>
+<h2 id="特徴-2">特徴</h2>
+<ul>
+<li>KVSと比較して，階層構造等のデータ構造に対応できる</li>
+<li>プログラミング言語内で利用しているデータ構造をそのまま格納できる</li>
+</ul>
+<h2 id="代表的なサービス-2">代表的なサービス</h2>
+<p>MongoDB : <a href="https://www.mongodb.com/">https://www.mongodb.com/</a></p>
+<p>Amazon DynamoDB : <a href="https://aws.amazon.com/jp/dynamodb/">https://aws.amazon.com/jp/dynamodb/</a></p>
+<h1 id="グラフ指向型">グラフ指向型</h1>
+<h2 id="概要-4">概要</h2>
+<p>ノード，エッジ，プロパティの3つから構成されるデータベース．</p>
+<h2 id="特徴-3">特徴</h2>
+<ul>
+<li>RDBでは表現が難しいネットワーク上のデータ処理に特化している．</li>
+</ul>
+<h2 id="代表的なサービス-3">代表的なサービス</h2>
+<p>Neo4j : <a href="https://neo4j.com/">https://neo4j.com/</a></p>
+<h1 id="まとめ">まとめ</h1>
+<p>NoSQLの中でもかなり種類があり，それぞれに特性があることがわかった．それにより，取り扱うデータによってどれが適切か正しく判断することが大切だと感じた．</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+      
+        © 2020
+      
+       Hibiki 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -5,10 +5,6 @@
     <link>https://4afs.github.io/blog/categories/</link>
     <description>Recent content in Categories on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://4afs.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://4afs.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

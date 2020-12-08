@@ -6,11 +6,7 @@
     <description>Recent content in programming on 4afS blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jan 2020 19:42:14 +0900</lastBuildDate>
-    
-	<atom:link href="https://4afs.github.io/blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 16 Jan 2020 19:42:14 +0900</lastBuildDate><atom:link href="https://4afs.github.io/blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>「Go言語による並行処理」の1章を読んで</title>
       <link>https://4afs.github.io/blog/posts/concurrency-in-go-1/</link>
